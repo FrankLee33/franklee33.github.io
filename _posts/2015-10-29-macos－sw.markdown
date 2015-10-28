@@ -1,0 +1,145 @@
+---
+layout:     post
+title:      "推荐我在MacOS系统下使用的软件"
+subtitle:   "苹果Mac系统下免费软件大推荐"
+date:       2015-10-29 15:05:00
+author:     "Franklee"
+header-img: "img/post-bg-07.jpg"
+---
+
+<ul>
+
+   <li>
+     <h3>Atom</h3>
+      <p>Atom 是 Github 推出的一个跨平台文本编辑器。简洁直观的图形用户界面，支持CSS，HTML，JavaScript等网页编程语言。
+      是sublime 的代替品。</p>
+   </li>
+
+   <li>
+     <h3>Brackets</h3>
+      <p>Brackets 是一个免费、开源且跨平台的 HTML/CSS/JavaScript 前端 WEB 集成开发环境 (IDE工具)。该项目由 Adobe 创建和维护，支持多平台。</p>
+   </li>
+
+   <li>
+     <h3>Chromium</h3>
+      <p>Chromium 是 Google 的chrome浏览器背后的引擎，是稳定和快速的浏览器，由Google主导开发的网页浏览器。</p>
+   </li>
+
+   <li>
+     <h3>CrossOver</h3>
+      <p>CrossOver在您的Mac上快速轻松地运行您的Windows应用程序和PC游戏</p>
+   </li>
+
+   <li>
+     <h3>Eclipse</h3>
+      <p>Eclipse 是基于Java的可扩展开发平台。支持插件，可通过插件构建开发环境。</p>
+   </li>
+
+   <li>
+     <h3>GIMP</h3>
+      <p>GIMP的定义 GIMP 是跨平台的图像处理程序。GIMP 是 GNU 图像处理程序(GNU Image Manipulation Program)的缩写。包括几乎所有图象处理所需的功能，号称Linux下的PhotoShop</p>
+   </li>
+
+   <li>
+     <h3>Github Desktop</h3>
+      <p>GitHub出品的Mac和Windows平台Git桌面版客户端,用于发布代码到Github平台上。</p>
+   </li>
+
+   <li>
+     <h3>HBuilder</h3>
+      <p>HBuilder是DCloud（数字天堂）推出的一款支持HTML5的Web开发IDE。可以快速开发跨平台跨设备的HTML5应用</p>
+   </li>
+
+   <li>
+     <h3>iTerm2</h3>
+      <p>Mac下功能齐全的终端仿真程序</p>
+   </li>
+
+   <li>
+     <h3>Komodo Edit</h3>
+      <p>跨平台多语言文本编辑器，Komodo Edit是免费的，Komodo IDE收费</p>
+   </li>
+
+   <li>
+     <h3>Lep's World 2 Plus</h3>
+      <p>Mac系统下类似超级玛丽的游戏。</p>
+   </li>
+
+
+   <li>
+     <h3>Mysql Workbench</h3>
+      <p>官方出免费的Mysql GUI工具</p>
+   </li>
+
+   <li>
+     <h3>SecureCRT</h3>
+      <p>是一款商业软件，支持SSH（SSH1和SSH2）的终端仿真程序，支持文件传输</p>
+   </li>
+
+   <li>
+     <h3>WebStorm</h3>
+      <p>一款强大的HTML5编辑工具，是 JetBrains 推出的一款商业的 JavaScript 开发工具。功能强大的前端专用IDE，拥有即时编辑（chrome）、自动完成、debugger、Zen Coding、HTML5 支持、JSLint、Less支持、CoffeeScript支持、Node.JS、单元测试、集成git和svn版本控制等特性，推荐前端工程师使用。</p>
+   </li>
+
+   <li>
+     <h3>XMind</h3>
+      <p>免费的思维导图软件，支持多平台，java语言开发</p>
+   </li>
+
+   <li>
+     <h3>XAMPP</h3>
+      <p>Mysql＋apache＋php集成开发环境，做php开发必备</p>
+   </li>
+
+   <li>
+     <h3>微信</h3>
+      <p>腾讯微信客户端</p>
+   </li>
+
+   <li>
+     <h3>WeiboX</h3>
+      <p>新浪微博客户端</p>
+   </li>
+
+
+   <li>
+     <h3>Snip</h3>
+      <p>小巧的屏幕截图软件</p>
+   </li>
+
+   <li>
+     <h3>迅雷</h3>
+      <p>国产下载软件</p>
+   </li>
+
+   <li>
+     <h3>QQ</h3>
+      <p>腾讯QQ</p>
+   </li>
+
+   <li>
+     <h3>PP助手</h3>
+      <p></p>
+   </li>
+
+   <li>
+     <h3>360安全卫士</h3>
+      <p></p>
+   </li>
+
+
+   <li>
+     <h3>wizNode</h3>
+      <p>为知笔记</p>
+   </li>
+
+   <li>
+     <h3>360云盘</h3>
+      <p></p>
+   </li>
+
+   <li>
+     <h3>酷狗音乐</h3>
+      <p>听歌曲的软件</p>
+   </li>
+</ul>
