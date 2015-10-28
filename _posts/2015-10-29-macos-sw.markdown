@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "推荐我在MacOS系统下使用的软件"
-subtitle:   "苹果Mac系统下免费软件大推荐"
+title:      "苹果Mac系统下软件大推荐"
+subtitle:   "推荐我在MacOS系统下使用的软件"
 date:       2015-10-29 15:05:00
 author:     "Franklee"
 header-img: "img/post-bg-07.jpg"
@@ -119,12 +119,12 @@ header-img: "img/post-bg-07.jpg"
 
    <li>
      <h3>PP助手</h3>
-      <p></p>
+      <p>Mac 系统助手</p>
    </li>
 
    <li>
      <h3>360安全卫士</h3>
-      <p></p>
+      <p>Mac 系统下的360安全卫士</p>
    </li>
 
 
@@ -135,7 +135,7 @@ header-img: "img/post-bg-07.jpg"
 
    <li>
      <h3>360云盘</h3>
-      <p></p>
+      <p>360云盘，自动同步文件到云端</p>
    </li>
 
    <li>
