@@ -56,6 +56,11 @@ header-img: "img/post-bg-07.jpg"
    </li>
 
    <li>
+      <h3>the unarchiver </h3>
+      <p>Mac 下的解压软件，用来解决出现cpgz文件问题</p>
+   </li>
+
+   <li>
      <h3>Komodo Edit</h3>
       <p>跨平台多语言文本编辑器，Komodo Edit是免费的，Komodo IDE收费</p>
    </li>
