@@ -1,12 +1,13 @@
 ---
 layout:     post
 title:      "angular-ui-router"
-subtitle:   "使用 angular-ui-router"
+subtitle:   "使用 angular-ui-router 制作网页"
 date:       2015-10-29 15:05:00
 author:     "Franklee"
 header-img: "img/post-bg-05.jpg"
 ---
 {% highlight html %}
+{% raw %}
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -20,4 +21,5 @@ header-img: "img/post-bg-05.jpg"
 
 </body>
 </html>
+{% endraw %}
 {% endhighlight %}
