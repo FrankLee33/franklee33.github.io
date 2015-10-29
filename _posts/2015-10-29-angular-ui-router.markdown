@@ -8,14 +8,12 @@ header-img: "img/post-bg-05.jpg"
 ---
 
 <pre>
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-   <meta charset="UTF-8">
-
-</head>
-<body ng-app="wetestApp" ui-view>
-
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="zh-cn">
+  <head>
+     <meta charset="UTF-8">
+  </head>
+  <body ng-app="wetestApp" ui-view>
+  </body>
+  </html>
 </pre>
