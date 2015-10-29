@@ -7,18 +7,15 @@ author:     "Franklee"
 header-img: "img/post-bg-05.jpg"
 ---
 
-{% raw %}
+<pre>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
    <meta charset="UTF-8">
-   <title>微学习</title>
-   <link rel="stylesheet" href="css/site.css">
-   <script src="js/vendor.js"></script>
-   <script src="js/site.js"></script>
+
 </head>
 <body ng-app="wetestApp" ui-view>
 
 </body>
 </html>
-{% endraw %}
+</pre>
