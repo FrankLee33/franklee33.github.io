@@ -6,7 +6,7 @@ date:       2015-10-29 15:05:00
 author:     "Franklee"
 header-img: "img/post-bg-05.jpg"
 ---
-{% highlight %}
+
 {% raw %}
 <!DOCTYPE html>
 <html lang="zh-cn">
@@ -22,4 +22,3 @@ header-img: "img/post-bg-05.jpg"
 </body>
 </html>
 {% endraw %}
-{% endhighlight %}
