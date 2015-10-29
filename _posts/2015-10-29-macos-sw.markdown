@@ -41,6 +41,11 @@ header-img: "img/post-bg-07.jpg"
    </li>
 
    <li>
+     <h3>Koala</h3>
+      <p>koala 是一款桌面程序，支持 less 、 sass 、 coffeescript 即时编译，帮助 web 开发者更高效地使用 less 、 sass 、 coffeescript 开发。</p>
+   </li>
+
+   <li>
      <h3>Github Desktop</h3>
       <p>GitHub出品的Mac和Windows平台Git桌面版客户端,用于发布代码到Github平台上。</p>
    </li>
