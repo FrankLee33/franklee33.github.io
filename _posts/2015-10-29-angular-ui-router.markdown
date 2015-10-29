@@ -6,7 +6,7 @@ date:       2015-10-29 15:05:00
 author:     "Franklee"
 header-img: "img/post-bg-05.jpg"
 ---
-{% highlight html linenos %}
+{% highlight html %}
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
