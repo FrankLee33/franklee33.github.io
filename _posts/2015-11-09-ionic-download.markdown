@@ -6,11 +6,13 @@ date:       2015-11-09 22:05:00
 author:     "Franklee"
 header-img: "img/post-bg-02.jpg"
 ---
+<pre class="brush: jscript">
 ionic plugin add uk.co.whiteoctober.cordova.appversion
 ionic plugin add org.apache.cordova.file
 ionic plugin add org.apache.cordova.file-transfer
+</pre>
 
-
+<pre class="brush: jscript">
 $http.get('version.xml',function(data){
      $cordovaAppVersion.getAppVersion().then(function(version){
           if(version!=data.version){
@@ -18,8 +20,9 @@ $http.get('version.xml',function(data){
           }
     });
 });
+</pre>
 
-
+<pre class="brush: jscript">
 function showUpdateConfirm(data){
   $ionicPopup.confirm({
       title:'版本升级',
@@ -54,3 +57,4 @@ function showUpdateConfirm(data){
 
   });
 }
+</pre>
