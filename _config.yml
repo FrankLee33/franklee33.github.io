@@ -3,7 +3,7 @@ title: Franklee 的博客
 header-img: img/home-bg.jpg
 email: franklee33@163.com
 description: "朝朝暮暮,我爱编程."
-baseurl: "http://franklee33.github.io"
+baseurl: "/franklee33.github.io"
 url: "http://franklee33.github.io"
 github_username:  franklee33
 qq_num: 47085711
