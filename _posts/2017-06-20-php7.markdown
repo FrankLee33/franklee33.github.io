@@ -1,0 +1,156 @@
+---
+layout:     post
+title:      "php7+ nginx 安装笔记"
+subtitle:   "php7安装笔记"
+date:       2017-05-09 21:09:00
+author:     "felix33"
+header-img: "img/post-bg-04.jpg"
+---
+
+## 安装mysql
+  yum update  
+  yum localinstall http://dev.mysql.com/get/mysql57-community-release-el7-7.noarch.rpm
+  yum install mysql-community-server  
+  yum install mysql-community-devel  
+
+- 启动  
+  service mysqld start  
+- 查看状态  
+  service mysqld status  
+
+- 获得默认密码  
+  grep 'temporary password' /var/log/mysqld.log  
+
+  ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNe121wPasdfs4!';  
+
+# 安装nginx  
+  yum install nginx  
+
+# 安装php7
+  wget http://cn2.php.net/distributions/php-7.1.7.tar.gz  
+  tar -xvf php-7.1.7.tar.gz  
+  yum  install epel-release  // 扩展包更新包  
+  yum  update // 更新yum源  
+  yum install libmcrypt libmcrypt-devel mcrypt mhash  
+  yum install libxml2 libxml2-devel openssl openssl-devel bzip2 bzip2-devel libcurl libcurl-devel libjpeg libjpeg-devel libpng libpng-devel freetype freetype-devel gmp gmp-devel libmcrypt libmcrypt-devel readline readline-devel libxslt libxslt-devel  
+
+  cd php-7.1.7  
+
+  ./configure \
+  --prefix=/usr/local/php \
+  --with-config-file-path=/etc \
+  --enable-fpm \
+  --with-fpm-user=root  \
+  --with-fpm-group=root \
+  --enable-inline-optimization \
+  --disable-debug \
+  --disable-rpath \
+  --enable-shared  \
+  --enable-soap \
+  --with-libxml-dir \
+  --with-xmlrpc \
+  --with-openssl \
+  --with-mcrypt \
+  --with-mhash \
+  --with-pcre-regex \
+  --with-sqlite3 \
+  --with-zlib \
+  --enable-bcmath \
+  --with-iconv \
+  --with-bz2 \
+  --enable-calendar \
+  --with-curl \
+  --with-cdb \
+  --enable-dom \
+  --enable-exif \
+  --enable-fileinfo \
+  --enable-filter \
+  --with-pcre-dir \
+  --enable-ftp \
+  --with-gd \
+  --with-openssl-dir \
+  --with-jpeg-dir \
+  --with-png-dir \
+  --with-zlib-dir  \
+  --with-freetype-dir \
+  --enable-gd-native-ttf \
+  --enable-gd-jis-conv \
+  --with-gettext \
+  --with-gmp \
+  --with-mhash \
+  --enable-json \
+  --enable-mbstring \
+  --enable-mbregex \
+  --enable-mbregex-backtrack \
+  --with-libmbfl \
+  --with-onig \
+  --enable-pdo \
+  --with-mysqli=mysqlnd \
+  --with-pdo-mysql=mysqlnd \
+  --with-zlib-dir \
+  --with-pdo-sqlite \
+  --with-readline \
+  --enable-session \
+  --enable-shmop \
+  --enable-simplexml \
+  --enable-sockets  \
+  --enable-sysvmsg \
+  --enable-sysvsem \
+  --enable-sysvshm \
+  --enable-wddx \
+  --with-libxml-dir \
+  --with-xsl \
+  --enable-zip \
+  --enable-mysqlnd-compression-support \
+  --with-pear \
+  --enable-opcache  
+
+  make && make install  
+
+# 添加 PHP 命令到环境变量  
+  vim /etc/profile  
+  在末尾加入
+    PATH=$PATH:/usr/local/php/bin  
+    export PATH  
+  使之生效
+    source /etc/profile  
+
+# 配置 php-fpm  
+  cp php.ini-production /etc/php.ini  
+  cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf  
+  sudo cp /usr/local/php/etc/php-fpm.d/www.conf.default /usr/local/php/etc/php-fpm.d/www.conf  
+  sudo cp sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm  
+
+
+# 项目配置
+  server {  
+     listen 18080;  
+     server_name  localhost;  
+     root /home/peafowl/Apps/fys/web;  
+     location / {  
+         index  index.php index.html index.htm;  
+         try_files $uri $uri/ /index.php?$args;  
+     }  
+     location ~ \.php {  
+         root /home/peafowl/Apps/fys/web;  
+         try_files $uri =404;  
+         fastcgi_pass   unix:/var/run/php-fpm/php-fpm.sock;  
+         fastcgi_index  index.php;  
+         fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;  
+         include        fastcgi_params;  
+     }  
+  }  
+
+
+  注意 /usr/local/php/etc/php-fpm.conf 文件中需要配置  
+     listen = /var/run/php-fpm/php-fpm.sock;  
+
+# 启动 / 重启 / 停止
+  /usr/sbin/nginx  
+  /usr/local/php/sbin/php-fpm start  
+
+  /usr/local/php/sbin/php-fpm restart  
+  /usr/sbin/nginx -s reload  
+
+  /usr/local/php/sbin/php-fpm stop  
+  /usr/sbin/nginx -s stop  

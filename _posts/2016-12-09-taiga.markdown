@@ -1,0 +1,33 @@
+---
+layout:     post
+title:      "安装taiga"
+subtitle:   "taiga 学习"
+date:       2016-12-09 22:05:00
+author:     "felix33"
+header-img: "img/post-bg-01.jpg"
+---
+# 安装nodejs
+
+# 安装ruby
+
+# 安装python 3.5
+
+# 安装扩展：
+  npm install  
+  gem install scss_lint  
+  pip install -r requirements.txt  
+
+# 安装 PostgreSQL
+  http://www.cnblogs.com/shineqiujuan/p/4703304.html  
+
+
+# 迁移数据：
+  python manage.py migrate --noinput  
+  python manage.py loaddata initial_user  
+  python manage.py loaddata initial_project_templates  
+  python manage.py loaddata initial_role  
+  python manage.py sample_data  
+
+# 启动服务
+  客户端：  gulp  
+  服务器：  python manage.py runserver  

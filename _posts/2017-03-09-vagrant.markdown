@@ -1,0 +1,73 @@
+---
+layout:     post
+title:      "构建一个基于ubuntu的 vagrant box。打造公用的开发环境"
+subtitle:   "使用vagrant"
+date:       2017-03-09 21:05:00
+author:     "felix33"
+header-img: "img/post-bg-03.jpg"
+---
+
+1. 安装 virtualbox  和 vagrant、cmder  
+2. 下载 ubuntu box。下载地址  
+  http://files.vagrantup.com/precise64.box  
+3. 添加盒子  
+   vagrant box add ubuntu ~/Downloads/precise64.box  
+
+### 创建一个应用 并启动  
+
+1. 创建一个目录  
+  mkdir  ～／dev/box  
+2. 进入目录后执行  
+  vagrant init ubuntu  
+3. 启动服务
+  vagrant up  
+
+### 启动后，进入ssh 管理，并安装需要的环境  
+
+1. 执行命令  
+  vagrant ssh  
+2. 进入后 /vagrant 目录为当前启动服务目录  
+3. 安装环境
+  sudo apt-get update  
+  sudo apt-get install -y wget  
+  sudo apt-get install -y git  
+  sudo apt-get install -y python-software-properties  
+
+  sudo apt-get install -y build-essential python-dev  
+  sudo apt-get install -y python-pip  
+  source ~/.bashrc  
+  sudo pip install virtualenv  
+  source ~/.bashrc  
+  sudo  apt-get install -y libmysqlclient-dev  
+  sudo apt-get install -y libtiff4-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.5-dev tk8.5-dev python-tk libxml2-dev  libxslt1-dev  libffi-dev  
+
+  sudo apt-get install -y nodes  
+  sudo apt-get install -y npm  
+  wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash  
+  source ~/.bashrc  
+  nvm install 7.9.0  
+  sudo nom install -g nrm  
+
+  sudo apt-get install redis-server  
+  sudo apt-get install -y mongoldb-dev  
+  sudo apt-get install -y mysql-server  
+  sudo apt-get install -y mysql-client  
+
+  sudo apt-add-repository ppa:ondrej/php  
+  sudo apt-get update  
+  sudo apt-get install -y php7.0  
+  sudo apt-get install -y  php7.0-mysql  php7.0-mbstring  php7.0-gd  php7.0-curl  
+
+### vagrant 常用命令
+
+  $ vagrant init [name]    # 初始化  
+  $ vagrant up                # 启动虚拟机  
+  $ vagrant halt              # 关闭虚拟机  
+  $ vagrant reload          # 重启虚拟机  
+  $ vagrant ssh              # SSH 至虚拟机  
+  $ vagrant status          # 查看虚拟机运行状态  
+  $ vagrant destroy        # 销毁当前虚拟机  
+
+### 网络设置
+
+### 打包 vagrant
